@@ -9,7 +9,10 @@ import { Score } from './game.service';
 })
 export class AdminService {
     private get apiUrl() {
-        return window.location.port === '4200' ? 'http://localhost:5000/api/admin' : '/api/admin';
+        if (window.location.hostname === 'localhost') {
+            return window.location.port === '4200' ? 'http://localhost:5000/api/admin' : '/api/admin';
+        }
+        return 'https://games-hae4.onrender.com/api/admin';
     }
 
 

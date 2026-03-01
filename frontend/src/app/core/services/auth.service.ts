@@ -16,7 +16,10 @@ export interface User {
 })
 export class AuthService {
     private get apiUrl() {
-        return window.location.port === '4200' ? 'http://localhost:5000/api/auth' : '/api/auth';
+        if (window.location.hostname === 'localhost') {
+            return window.location.port === '4200' ? 'http://localhost:5000/api/auth' : '/api/auth';
+        }
+        return 'https://games-hae4.onrender.com/api/auth';
     }
 
     currentUser = signal<User | null>(this.getUserFromStorage());

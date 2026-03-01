@@ -16,7 +16,10 @@ export interface Score {
 })
 export class GameService {
     private get apiUrl() {
-        return window.location.port === '4200' ? 'http://localhost:5000/api/game' : '/api/game';
+        if (window.location.hostname === 'localhost') {
+            return window.location.port === '4200' ? 'http://localhost:5000/api/game' : '/api/game';
+        }
+        return 'https://games-hae4.onrender.com/api/game';
     }
 
 
