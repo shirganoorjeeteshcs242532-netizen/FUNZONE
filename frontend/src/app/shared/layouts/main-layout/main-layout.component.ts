@@ -18,11 +18,7 @@ import { TopbarComponent } from '../../components/topbar/topbar.component';
         </div>
         <footer class="main-footer glass">
           <div class="footer-content">
-            <span class="human-badge orbitron">MADE BY HUMAN</span>
-            <div class="creator-info">
-              <span class="label">LEAD ARCHITECT</span>
-              <span class="name glow-blue">ABHISHEK SINGH</span>
-            </div>
+            <span class="creator-badge orbitron">MADE BY ABHISHEK SINGH</span>
             <p class="copyright orbitron">NEON-PROTOCOL &copy; 2026</p>
           </div>
         </footer>
@@ -65,30 +61,20 @@ import { TopbarComponent } from '../../components/topbar/topbar.component';
       margin: 0 auto;
     }
 
-    .human-badge {
-      font-size: 0.65rem;
-      letter-spacing: 5px;
-      color: #666;
-      padding: 4px 12px;
-      border: 1px solid #333;
-      border-radius: 4px;
-      background: rgba(255,255,255,0.02);
-      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    .creator-badge {
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      color: #00f2ff;
+      text-shadow: 0 0 10px #00f2ff;
+      padding: 6px 16px;
+      border-left: 3px solid #00f2ff;
+      background: rgba(0, 242, 255, 0.05);
+      font-weight: 900;
+      transition: all 0.3s ease;
       &:hover {
-        color: #fff;
-        border-color: #7000ff;
-        box-shadow: 0 0 10px rgba(112, 0, 255, 0.5);
-        transform: translateY(-2px) scale(1.05);
+        background: rgba(0, 242, 255, 0.1);
+        letter-spacing: 5px;
       }
-    }
-
-    .creator-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2px;
-      .label { font-size: 0.55rem; color: #444; font-weight: 900; letter-spacing: 1px; }
-      .name { font-family: 'Orbitron'; font-size: 0.85rem; font-weight: 900; letter-spacing: 2px; }
     }
 
     .copyright {
