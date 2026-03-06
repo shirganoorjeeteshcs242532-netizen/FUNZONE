@@ -81,6 +81,6 @@ FunZone-MEAN/
 10. Reaction Timer Game
 
 ---
-Designed & Engineered by **JEETESH SHIRGANOOR** 🛠️
+Designed & Engineered by **JEETESH SHIRGANOOR AND VIKAS PAL** 🛠️
 
 # FUNZONE

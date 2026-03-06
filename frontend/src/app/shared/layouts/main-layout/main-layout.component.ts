@@ -18,7 +18,7 @@ import { TopbarComponent } from '../../components/topbar/topbar.component';
         </div>
         <footer class="main-footer glass">
           <div class="footer-content">
-            <span class="creator-badge orbitron">MADE BY JEETESH SHIRGANOOR</span>
+            <span class="creator-badge orbitron">MADE BY JEETESH SHIRGANOOR AND VIKAS PAL</span>
             <p class="copyright orbitron">NEON-PROTOCOL &copy; 2026</p>
           </div>
         </footer>
