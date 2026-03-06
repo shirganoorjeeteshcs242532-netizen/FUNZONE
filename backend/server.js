@@ -35,18 +35,9 @@ app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/game', require('./routes/gameRoutes'));
 app.use('/api/admin', require('./routes/adminRoutes'));
 
-// Serve Frontend in Production
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(path.resolve(), '..', 'frontend', 'dist', 'frontend', 'browser')));
-
-    app.use((req, res) =>
-        res.sendFile(path.resolve(path.resolve(), '..', 'frontend', 'dist', 'frontend', 'browser', 'index.html'))
-    );
-} else {
-    app.get('/', (req, res) => {
-        res.send('API is running...');
-    });
-}
+app.get('/', (req, res) => {
+    res.send('FunZone API is running successfully...');
+});
 
 // Error handler
 app.use(errorHandler);
