@@ -81,7 +81,6 @@ FunZone-MEAN/
 10. Reaction Timer Game
 
 ---
-Designed & Engineered by **Abhishek Singh** 🛠️
-[https://github.com/Abhi8604351](https://github.com/Abhi8604351)
+Designed & Engineered by **JEETESH AND VIKAS** 🛠️
 
 # FUNZONE
