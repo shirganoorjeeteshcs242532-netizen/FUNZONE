@@ -19,7 +19,7 @@ export class GameService {
         if (window.location.hostname === 'localhost') {
             return window.location.port === '4200' ? 'http://localhost:5000/api/game' : '/api/game';
         }
-        return 'https://games-hae4.onrender.com/api/game';
+        return 'https://funzone-14cy.onrender.com/api/game';
     }
 
 

@@ -19,7 +19,7 @@ export class AuthService {
         if (window.location.hostname === 'localhost') {
             return window.location.port === '4200' ? 'http://localhost:5000/api/auth' : '/api/auth';
         }
-        return 'https://games-hae4.onrender.com/api/auth';
+        return 'https://funzone-14cy.onrender.com/api/auth';
     }
 
     currentUser = signal<User | null>(this.getUserFromStorage());

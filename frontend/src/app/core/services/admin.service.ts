@@ -12,7 +12,7 @@ export class AdminService {
         if (window.location.hostname === 'localhost') {
             return window.location.port === '4200' ? 'http://localhost:5000/api/admin' : '/api/admin';
         }
-        return 'https://games-hae4.onrender.com/api/admin';
+        return 'https://funzone-14cy.onrender.com/api/admin';
     }
 
 
